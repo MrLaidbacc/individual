@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(246, 255, 255);
+}
+
+.box1 {
+    margin-right: 80px;
+    margin-inline-start: 20px;
+    margin-block-start: 200px;
+}
+
+.header {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.paragraph {
+    width: 400px;
+    color: rgb(67, 65, 65) 2, 78, 78;
+}
+
+.fig {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    border: 1px solid rgb(245, 239, 239);
+    padding-bottom: 50px;
+    margin-block-start: 130px;
+    margin-block-end: 100px;
+    height: 70vh;
+}
+
+.fill {
+    display: flex;
+    width: 100%;
+}
+
+.form-container {
+    padding-top: 40px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    max-width: 600px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px #ccc;;
+    border-radius: 10px;
+}
+
+.fName {
+    margin-right: 50px;
+}
+
+input {
+    width: 230px;
+    height: 35px;
+    border: 1px thin solid;
+}
+
+select {
+    height: 35px;
+    width: 250px;
+}
+
+.fill {
+    display: flex;
+    margin-bottom: 40px;
+
+    > label {
+        display: block;
+    }
+}
+
+.level select {
+    width: 500px;
+}
+
+.lvl {
+    margin-bottom: 30px;
+
+    > label {
+        display: block;
+
+    }
+
+    > input {
+        height: 40px;
+        width: 550px;
+    }
+}
+
+.gend {
+    padding-right: 40px;
+
+    > label {
+        display: block;
+    }
+    > input {
+        width: 199px;
+        margin: 10px;
+    }
+}
+
+.wei {
+    padding-right: 30px;
+}
+
+button {
+    height: 40px;
+    width: 500px;
+    color: white;
+    background-color: rgba(9, 163, 163, 0.721);
+    border-color: rgba(9, 163, 163, 0.721);
+}
+
+.button {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    padding-bottom: 30px;
+}
+
+a{
+    color: rgba(9, 163, 163, 0.721);
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        inline-size: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .fig {
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .fill input,
+    .fill select {
+        width: 360px !important;
+    }
+
+    .fill {
+        display: grid;
+        margin-block-end: 10px;
+    }
+
+    #input {
+        inline-size: 100px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        inline-size: 350px;
+    }
+
+    .fName,
+    .gend,
+    .dob,
+    .wei {
+        margin-block-end: 5px;
+    }
+
+    .gend {
+        margin-block-end: 5px;
+    }
+
+    .center input {
+        width: 360px !important;
+    }
+}
